@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Stock Oracle - Smart Predictions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">AI Stock Oracle</a>
+                <div style="color: rgba(255,255,255,0.8); font-size: 14px;">
+                    Powered by AI • Not Financial Advice
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Smart Stock Predictions</h1>
+                <p>Get AI-powered insights on your favorite stocks. Enter up to 3 tickers and receive intelligent analysis with buy/sell/hold recommendations.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="main-card">
+                <div class="action-panel">
+                    <div class="input-section">
+                        <h2>Select Your Stocks</h2>
+                        <p>Enter stock tickers (e.g., AAPL, TSLA, MSFT) to analyze</p>
+                        
+                        <form id="ticker-form" class="ticker-form">
+                            <input 
+                                type="text" 
+                                id="ticker-input" 
+                                placeholder="Enter ticker symbol..."
+                                maxlength="10"
+                            >
+                            <button type="submit" class="add-btn">Add Stock</button>
+                        </form>
+
+                        <div class="tickers-display" id="tickers-display">
+                            <span class="placeholder-text">Your selected stocks will appear here...</span>
+                        </div>
+
+                        <button class="generate-btn" id="generate-btn" disabled>
+                            Generate AI Report
+                        </button>
+                    </div>
+                </div>
+
+                <div class="loading-panel" id="loading-panel">
+                    <div class="spinner"></div>
+                    <div>
+                        <h3>Analyzing Market Data...</h3>
+                        <p id="loading-message">Fetching real-time stock data</p>
+                    </div>
+                </div>
+
+                <div class="output-panel" id="output-panel">
+                    <h2>📊 Your AI Stock Report</h2>
+                    <div class="report-content" id="report-content"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AI Stock Oracle. This is for educational purposes only and not real financial advice.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
