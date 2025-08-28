@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Stock Predictor 📈
 
 A secure, AI-powered stock prediction app that provides intelligent analysis and buy/sell/hold recommendations.
@@ -140,3 +141,7 @@ If you need help:
 2. Verify your API keys are correct
 3. Ensure you have API quota remaining
 4. Check the GitHub issues for common problems
+=======
+# stock-predictor
+AI-powered stock prediction app with secure API integration
+>>>>>>> 7647fc6a664dbf83e47fa1481d359ff4de272f05
